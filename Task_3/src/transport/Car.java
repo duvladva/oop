@@ -92,7 +92,7 @@ public class Car {
     }
 
 
-    class Key {
+    public class Key {
         private final boolean remoteEngineStart;
         private final boolean nonKeyAccess;
 
