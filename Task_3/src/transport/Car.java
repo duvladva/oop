@@ -1,7 +1,7 @@
 package transport;
 
 import java.awt.*;
-import java.security.Key;
+ import java.security.Key;
 
 public class Car {
     private final String brand;
@@ -23,13 +23,13 @@ public class Car {
                String productionCountry, String transmission, String bodyTypes, Integer registrationNumber,
                Integer seatsCount, Boolean summerTyres, boolean remoteEngineStart, boolean nonKeyAccess) {
 
-        if (brand.isBlank() || brand == null) {
+        if (brand == null || brand.isBlank()) {
             this.brand = "default";
         } else {
             this.brand = brand;
         }
 
-        if (model.isBlank() || model == null) {
+        if ( model == null || model.isBlank()) {
             this.model = "default";
         } else {
             this.model = model;
@@ -41,7 +41,7 @@ public class Car {
             this.engineVolume = engineVolume;
         }
 
-        if (color.isBlank() || color == null) {
+        if (color == null || color.isBlank()) {
             this.color = "white";
         } else {
             this.color = color;
@@ -54,22 +54,22 @@ public class Car {
         }
 
 
-        if (productionCountry.isBlank() || productionCountry == null) {
+        if (productionCountry == null || productionCountry.isBlank()) {
             this.productionCountry = "default";
         } else {
             this.productionCountry = productionCountry;
         }
 
-        if (transmission.isBlank() || transmission == null) {
+        if (transmission == null || transmission.isBlank()) {
             this.transmission = "default";
         } else {
             this.transmission = transmission;
         }
 
-        if (bodyTypes.isBlank() || bodyTypes == null) {
+        if (bodyTypes == null || bodyTypes.isBlank()) {
             this.bodyTypes = "default";
         } else {
-            this.bodyTypes = brand;
+            this.bodyTypes = bodyTypes;
         }
 
         if (registrationNumber <= 0) {
@@ -100,7 +100,6 @@ public class Car {
             this.remoteEngineStart = remoteEngineStart;
             this.nonKeyAccess = nonKeyAccess;
         }
-
 
         @Override
         public String toString() {

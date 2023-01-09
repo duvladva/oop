@@ -2,7 +2,7 @@ import transport.Car;
 
 public class Main {
     public static void main(String[] args) {// создаем пять объектов класса Car с определенными значениями параметров
-        Car lada = new Car("Lada","", 1.7, "",-2015, "", "ручная",
+        Car lada = new Car(null,null, 1.7, "",-2015, "", "ручная",
                 "sedan", 123, 4, false, true, true);
 
         Car audi = new Car("Audi","",3.0, "", -2020, "", "автоматическая",
